@@ -1,17 +1,15 @@
 // ===============================
-// SAT Score Predictor Pro v2.0
+// SAT Score Predictor
 // Developed by Ashraful Ferdous Rafsun
 // ===============================
 
 function calculateSAT() {
 
-    const mathInput = document.getElementById("math");
-    const readingInput = document.getElementById("reading");
-
-    const math = Number(mathInput.value);
-    const reading = Number(readingInput.value);
+    const math = Number(document.getElementById("math").value);
+    const reading = Number(document.getElementById("reading").value);
 
     // Validation
+
     if (!math || !reading) {
         alert("Please enter both Math and Reading & Writing scores.");
         return;
@@ -27,7 +25,11 @@ function calculateSAT() {
         return;
     }
 
+    // Total Score
+
     const total = math + reading;
+
+    // Performance
 
     let performance = "";
     let color = "";
@@ -74,17 +76,29 @@ function calculateSAT() {
         percentile = "Below 60th Percentile";
     }
 
-    // Update Dashboard
-    document.getElementById("totalScore").textContent = total + " / 1600";
-    document.getElementById("mathScore").textContent = math;
-    document.getElementById("readingScore").textContent = reading;
+    // Update Report
+
+    document.getElementById("totalScore").textContent =
+        total + " / 1600";
+
+    document.getElementById("mathScore").textContent =
+        math;
+
+    document.getElementById("readingScore").textContent =
+        reading;
 
     document.getElementById("performance").innerHTML =
-        `<span style="color:${color};font-weight:bold;">${performance}</span>`;
+        "<span style='color:" + color + ";font-weight:bold;'>" +
+        performance +
+        "</span>";
 
-    document.getElementById("percentile").textContent = percentile;
+    document.getElementById("percentile").textContent =
+        percentile;
 
     // Progress Bar
+
     const progress = (total / 1600) * 100;
-    document.getElementById("progressFill").style.width = progress + "%";
+
+    document.getElementById("progressFill").style.width =
+        progress + "%";
 }
