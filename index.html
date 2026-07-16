@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Score Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch">
+        <label class="switch">
+            <input type="checkbox" id="darkMode">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="container">
+
+        <h1 class="main-title">🎓 SAT SCORE PREDICTOR</h1>
+
+        <p class="subtitle">
+            Calculate your estimated SAT Total Score
+        </p>
+
+        <label>Math Score (200 - 800)</label>
+
+        <input
+            type="number"
+            id="math"
+            min="200"
+            max="800"
+            placeholder="Example: 750">
+
+        <br><br>
+
+        <label>Reading & Writing Score (200 - 800)</label>
+
+        <input
+            type="number"
+            id="reading"
+            min="200"
+            max="800"
+            placeholder="Example: 700">
+
+        <br><br>
+
+        <button onclick="calculateSAT()">
+            Calculate Score
+        </button>
+
+        <div id="result" class="result">
+
+    <h2>SAT SCORE REPORT</h2>
+
+    <hr>
+
+    <p>Total Score</p>
+
+    <h1 id="totalScore">-- /1600</h1>
+
+    <hr>
+
+    <p>Math</p>
+
+    <h3 id="mathScore">--</h3>
+
+    <p>Reading & Writing</p>
+
+    <h3 id="readingScore">--</h3>
+
+    <hr>
+
+    <p>Performance</p>
+
+    <h3 id="performance">--</h3>
+
+    <hr>
+
+    <p>Approximate Percentile</p>
+    <hr>
+
+<p>Score Progress</p>
+
+<div class="progress">
+
+    <div class="progress-fill" id="progressFill">
+
+    </div>
+
+</div>
+
+    <h3 id="percentile">--</h3>
+
+</div>
+<hr style="margin:25px 0 15px;">
+
+<div class="footer">
+    <p>Designed & Developed by <strong>Ashraful Ferdous Rafsun</strong></p>
+    <p>© 2026 All Rights Reserved</p>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
