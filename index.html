@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <div class="container">
 
         <h1 class="main-title">🎓 SAT SCORE PREDICTOR</h1>
@@ -19,7 +19,7 @@
             Calculate your estimated SAT Total Score
         </p>
 
-        <label>Math Score (200 - 800)</label>
+        <label for="math">Math Score (200 - 800)</label>
 
         <input
             type="number"
@@ -30,7 +30,7 @@
 
         <br><br>
 
-        <label>Reading & Writing Score (200 - 800)</label>
+        <label for="reading">Reading & Writing Score (200 - 800)</label>
 
         <input
             type="number"
@@ -47,54 +47,56 @@
 
         <div id="result" class="result">
 
-    <h2>SAT SCORE REPORT</h2>
+            <h2>SAT SCORE REPORT</h2>
 
-    <hr>
+            <hr>
 
-    <p>Total Score</p>
+            <p>Total Score</p>
 
-    <h1 id="totalScore">-- /1600</h1>
+            <h1 id="totalScore">-- / 1600</h1>
 
-    <hr>
+            <hr>
 
-    <p>Math</p>
+            <p>Math</p>
 
-    <h3 id="mathScore">--</h3>
+            <h3 id="mathScore">--</h3>
 
-    <p>Reading & Writing</p>
+            <p>Reading & Writing</p>
 
-    <h3 id="readingScore">--</h3>
+            <h3 id="readingScore">--</h3>
 
-    <hr>
+            <hr>
 
-    <p>Performance</p>
+            <p>Performance</p>
 
-    <h3 id="performance">--</h3>
+            <h3 id="performance">--</h3>
 
-    <hr>
+            <hr>
 
-    <p>Approximate Percentile</p>
-    <hr>
+            <p>Approximate Percentile</p>
 
-<p>Score Progress</p>
+            <h3 id="percentile">--</h3>
 
-<div class="progress">
+            <hr>
 
-    <div class="progress-fill" id="progressFill">
+            <p>Score Progress</p>
 
-    </div>
+            <div class="progress">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
 
-</div>
+        </div>
 
-    <h3 id="percentile">--</h3>
+        <div class="footer">
+            <p>
+                Designed & Developed by
+                <strong>Ashraful Ferdous Rafsun</strong>
+            </p>
 
-</div>
-<hr style="margin:25px 0 15px;">
-
-<div class="footer">
-    <p>Designed & Developed by <strong>Ashraful Ferdous Rafsun</strong></p>
-    <p>© 2026 All Rights Reserved</p>
-</div>
+            <p>
+                © 2026 All Rights Reserved
+            </p>
+        </div>
 
     </div>
 
