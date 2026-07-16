@@ -88,15 +88,3 @@ function calculateSAT() {
     const progress = (total / 1600) * 100;
     document.getElementById("progressFill").style.width = progress + "%";
 }
-
-// ===============================
-// Dark Mode
-// ===============================
-
-const darkModeToggle = document.getElementById("darkMode");
-
-if (darkModeToggle) {
-    darkModeToggle.addEventListener("change", function () {
-        document.body.classList.toggle("dark-mode");
-    });
-}
