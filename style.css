@@ -10,10 +10,10 @@
 
 body{
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding:30px 0;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
     overflow-y:auto;
 
     background:linear-gradient(135deg,#0f172a,#2563eb,#38bdf8);
@@ -152,13 +152,10 @@ button:hover{
 /* Dark Mode Toggle */
 
 .theme-switch{
-
-    position:absolute;
-
-    top:25px;
-
-    right:30px;
-
+    position:fixed;
+    top:15px;
+    right:15px;
+    z-index:9999;
 }
 
 .switch{
@@ -311,4 +308,20 @@ input:checked + .slider:before{
 
 .dark-mode .footer strong{
     color:#ffffff;
+}
+/* Mobile Responsive */
+
+@media (max-width: 768px){
+
+    .container{
+        width:95%;
+        margin:80px auto 20px;
+        padding:25px;
+    }
+
+    .theme-switch{
+        top:15px;
+        right:15px;
+    }
+
 }
